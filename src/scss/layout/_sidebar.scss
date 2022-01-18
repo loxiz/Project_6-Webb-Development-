@@ -2,6 +2,10 @@
 
 .sidebar {
 
+    &__inner {
+        margin: 3rem 4rem 4rem;
+    }
+
     &__button {
         @include button.standard;
     }

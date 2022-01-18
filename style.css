@@ -61,6 +61,9 @@ h1 {
   background-color: var(--color-gray-200);
   overflow: auto;
 }
+.sidebar__inner {
+  margin: 3rem 4rem 4rem;
+}
 .sidebar__button {
   background-color: var(--color-accent);
   color: var(--color-white);
