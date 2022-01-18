@@ -42,6 +42,16 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+p, a, li {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  color: var(--color-gray-400);
+}
+
 h1 {
   font-size: var(--font-size-6);
 }
@@ -60,6 +70,9 @@ h1 {
 .content {
   background-color: var(--color-gray-200);
   overflow: auto;
+}
+.sidebar__back {
+  text-decoration: none;
 }
 .sidebar__inner {
   margin: 3rem 4rem 4rem;
