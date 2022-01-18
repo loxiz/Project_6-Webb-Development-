@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-p, a, li {
+p, a, li, span {
   font-family: var(--font-sans);
   line-height: 1.5;
   color: var(--color-gray-400);
@@ -120,6 +120,43 @@ h1 {
   font-size: var(--font-size-small);
   text-transform: uppercase;
   color: var(--color-gray-400);
+  font-weight: 700;
+}
+
+.colors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.colors__item {
+  margin-right: 7px;
+}
+.colors__item:last-of-type {
+  margin-right: 0;
+}
+.colors__item--current a {
+  opacity: 1;
+}
+.colors__link {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  opacity: 0.4;
+}
+.colors__link--yellow {
+  background-color: #eeb826;
+}
+.colors__link--green {
+  background-color: #06a07d;
+}
+.colors__link--pink {
+  background-color: #d80cb8;
+}
+.colors__link--red {
+  background-color: #ff0000;
 }
 
 /*# sourceMappingURL=style.css.map */
