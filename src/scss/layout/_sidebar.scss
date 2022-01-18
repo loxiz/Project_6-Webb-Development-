@@ -1,0 +1,9 @@
+@use '../components/buttons' as button;
+
+.sidebar {
+
+    &__button {
+        @include button.standard;
+    }
+
+}
