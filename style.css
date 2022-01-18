@@ -44,12 +44,21 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
+  color: var(--color-white);
 }
 
 p, a, li {
   font-family: var(--font-sans);
   line-height: 1.5;
   color: var(--color-gray-400);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: all 0.2s;
+  color: var(--color-white);
 }
 
 h1 {
@@ -70,9 +79,6 @@ h1 {
 .content {
   background-color: var(--color-gray-200);
   overflow: auto;
-}
-.sidebar__back {
-  text-decoration: none;
 }
 .sidebar__inner {
   margin: 3rem 4rem 4rem;
