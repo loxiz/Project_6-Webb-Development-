@@ -1,8 +1,28 @@
-@mixin input() {
-    border: 1px solid var(--color-gray-100);
-    background-color: var(--color-gray-200);
-    border-radius: 0;
-    font-family: var(--font-sans);
-    font-size: var(--font-size-1);
-    font-weight: 700;
-}
+@mixin input(
+    $background: var(--color-gray-200),
+    $border-radius: 0,
+    $color: var(--color-white),
+    $width: 100% 
+    ) {
+        border: 1px solid var(--color-gray-100);
+        background-color: $background;
+        border-radius: $border-radius;
+        font-family: var(--font-sans);
+        font-size: var(--font-size-1);
+        font-weight: 700;
+        color: $color;
+        padding: 0.5rem 1rem;
+        max-width: $width;
+        width: auto;
+
+
+        @if $width == auto {
+            display: inline-block;
+            
+        }
+        @else {
+            max-width: $width;
+            
+        }
+
+      }

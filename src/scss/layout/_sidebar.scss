@@ -1,5 +1,6 @@
 @use '../components/buttons' as button;
 @use '../tools/colors' as color;
+@use '../components/form' as form;
 
 .sidebar {
 
@@ -35,11 +36,24 @@
         color: var(--color-white);
     }
 
-    €__subtitle {
+    &__subtitle {
         font-size: var(--font-size-small);
         text-transform: uppercase;
         color: var(--color-gray-400);
         font-weight: 700;
+    }
+
+    // Form
+    &__less {
+        @include form.input($color: var(--color-gray-400), $border-radius: 50px 0 0 50px)
+    }
+
+    &__more {
+        @include form.input($color: var(--color-gray-400), $border-radius: 0 50px 50px 0)
+    }
+
+    &__count {
+        @include form.input;
     }
 
 
@@ -76,6 +90,7 @@
         border: 2px solid white;
         opacity: 0.4;
         
+        
     
 
     &--yellow {
@@ -94,9 +109,15 @@
         background-color: color.$red;
     }
 
+     
+
+    
+
 }
 
     
 
 
 }
+
+
