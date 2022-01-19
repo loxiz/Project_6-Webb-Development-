@@ -2,7 +2,8 @@
     $background: var(--color-gray-200),
     $border-radius: 0,
     $color: var(--color-white),
-    $width: 100% 
+    $width: auto,
+    $text-align: left
     ) {
         border: 1px solid var(--color-gray-100);
         background-color: $background;
@@ -12,16 +13,16 @@
         font-weight: 700;
         color: $color;
         padding: 0.5rem 1rem;
-        max-width: $width;
-        width: auto;
+        text-align: $text-align;
+        
 
 
         @if $width == auto {
             display: inline-block;
             
-        }
-        @else {
+        } @else {
             max-width: $width;
+            width: 100%;
             
         }
 
