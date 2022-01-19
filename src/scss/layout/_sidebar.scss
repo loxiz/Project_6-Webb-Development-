@@ -3,6 +3,9 @@
 @use '../components/form' as form;
 
 .sidebar {
+    display: grid;
+
+       
 
     &__back {
         font-size: var(--font-size-small);
@@ -13,6 +16,9 @@
     &__inner {
         margin: 3rem 4rem 4rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__button {
@@ -45,6 +51,11 @@
         text-transform: uppercase;
         color: var(--color-gray-400);
         font-weight: 700;
+    }
+
+    // Quantity 
+    &__quantity, &__swatch {
+        margin-top: 5rem;
     }
 
     // Form
