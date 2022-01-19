@@ -109,6 +109,11 @@
         background-color: color.$red;
     }
 
+
+    &:hover {
+        filter: blur(0.70px);
+        border: 2px solid var(--color-accent);
+    }
      
 
     
