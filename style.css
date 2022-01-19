@@ -196,5 +196,9 @@ h1 {
 .colors__link--red {
   background-color: #ff0000;
 }
+.colors__link:hover {
+  filter: blur(0.7px);
+  border: 2px solid var(--color-accent);
+}
 
 /*# sourceMappingURL=style.css.map */
