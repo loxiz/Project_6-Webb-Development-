@@ -12,6 +12,7 @@
 
     &__inner {
         margin: 3rem 4rem 4rem;
+        text-align: center;
     }
 
     &__button {
@@ -25,6 +26,9 @@
 
 // Product
 .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title {
         font-size: var(--font-size-3);
@@ -44,6 +48,12 @@
     }
 
     // Form
+
+    &__form {
+        display: flex;
+        
+    }
+
     &__less {
         @include form.input($color: var(--color-gray-400), $border-radius: 50px 0 0 50px)
     }
@@ -53,7 +63,7 @@
     }
 
     &__count {
-        @include form.input;
+        @include form.input($width: 60px, $text-align: center);
     }
 
 
