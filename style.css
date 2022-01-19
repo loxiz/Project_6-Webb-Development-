@@ -93,6 +93,9 @@ h1 {
 .sidebar__back {
   font-size: var(--font-size-small);
 }
+.sidebar__back svg {
+  transform: translate(-0.5rem, 2px);
+}
 .sidebar__inner {
   margin: 3rem 4rem 4rem;
   text-align: center;
@@ -191,6 +194,15 @@ h1 {
 }
 .colors__item--current a {
   opacity: 1;
+}
+.colors__item--current a:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 14px;
+  background-image: url(assets/icons/icon-checkmark.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .colors__link {
   display: block;

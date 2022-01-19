@@ -8,6 +8,9 @@
        
 
     &__back {
+        svg {
+            transform: translate(-0.5rem, 2.0px);
+        }
         font-size: var(--font-size-small);
     }
 
@@ -96,6 +99,17 @@
 
             a {
                 opacity: 1;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 14px;
+                    background-image: url(assets/icons/icon-checkmark.svg);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    
+                    
+                }
             }
 
         }
