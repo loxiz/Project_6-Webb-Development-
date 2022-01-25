@@ -6,6 +6,8 @@ const cart = () => {
     const moreButton = document.querySelector('.product__more')
     const input = document.querySelector('.product__form')
 
+    // prevent default behaviour of form
+    FormData.addEventListener('submit', e => e.preventDefault)
 
 }
 
