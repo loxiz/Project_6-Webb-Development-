@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="src/js/cart.js" defer></script>
 </head>
 <body>
 
@@ -55,7 +56,7 @@
                         <h3 class="product__subtitle">Quantity</h3>
                         <form class="product__form" action="">
                             <button class="product__less">-</button>
-                            <input type="text" name="" id="" class="product__count" value="1">
+                            <input type="number" name="" id="" class="product__count" value="1">
                             <button class="product__more">+</button>
                         </form>
                     </div>
@@ -98,8 +99,12 @@
 
 
                     <div class="header__buttons">
-                        <a href="" class="cart">
-                            <div class="cart__counter"></div>
+                        <a href="" class="header__cart">Cart
+                            <div class="header__counter">3</div>
+
+                            <button class="menu-button">
+                                <div class="menu-button__hamburger"></div>
+                            </button>
                         </a>
                     </div>
                 </div>

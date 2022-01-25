@@ -1,0 +1,16 @@
+@use '../components/buttons' as button;
+
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+    &__cart {
+        @include button.standard($background: var(--color-gray-300), $size: 'small')
+    }
+
+}

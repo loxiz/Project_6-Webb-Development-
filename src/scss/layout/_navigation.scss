@@ -1,0 +1,17 @@
+ .menu {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+
+    &__item {
+        margin-right: 3rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+
+ }
